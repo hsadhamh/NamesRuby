@@ -1,4 +1,3 @@
-#require 'models/concerns/filterable'
 
 class Name < ApplicationRecord
   include Filterable

@@ -6,7 +6,7 @@ module Api::V1
       # GET /names
       def index
         @names = Name.filter(params.slice(:gender))
-        render json: @names
+        render status: 200, json: @names
       end
 
   end
